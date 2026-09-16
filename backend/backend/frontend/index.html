@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Management System</h1>
+
+        <form id="studentForm">
+            <input type="text" id="name" placeholder="Student Name" required>
+            <input type="text" id="department" placeholder="Department" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="phone" placeholder="Phone" required>
+            <input type="number" id="year" placeholder="Year" min="1" max="4" required>
+
+            <button type="submit">Add Student</button>
+        </form>
+
+        <h2>Student List</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Year</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentList"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
